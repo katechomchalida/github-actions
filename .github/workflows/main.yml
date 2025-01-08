@@ -8,15 +8,15 @@ on:
       lrc_tenant:
         description: 'Tenant ID'
         required: true
-        default: '516042910'
+        default: '859556104'
       lrc_project:
         description: 'Project ID'
         required: true
-        default: '17'
+        default: '1'
       lrc_test_id:
         description: 'Test ID'
         required: true
-        default: '515'
+        default: '3'
       lrc_output_dir:
         description: 'The directory to save results'
         required: false
@@ -39,8 +39,8 @@ jobs:
         uses: MicroFocus/lrc-gh-action@v1
         id: lrc_run_test
         env:
-          LRC_CLIENT_ID: 'oauth2-FcHokELNZzjJVuc38688@microfocus.com'
-          LRC_CLIENT_SECRET: 'EbpDqENJJRe878j3AiEn'
+          LRC_CLIENT_ID: 'oauth2-78yeCU1wQuq67g7HKAcQ@microfocus.com'
+          LRC_CLIENT_SECRET: 'LsCaB5GDBCtCD0lY0uTO'
         with:
           lrc_server: ${{ github.event.inputs.lrc_server }}
           lrc_tenant: ${{ github.event.inputs.lrc_tenant }}
